@@ -2,13 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import img4 from "@/assets/variety-cones.jpg";
 import img5 from "@/assets/example-ocasioes.png";
 import img6 from "@/assets/example-estoque.png";
 import img7 from "@/assets/example-arquivos.png";
 
 const images = [
-  { src: img4, alt: "Grande variedade de cones coloridos" },
   { src: img5, alt: "Moldes para todas as ocasiões - Páscoa, Natal, Dia das Mães e mais" },
   { src: img6, alt: "Estoque de cones prontos para venda" },
   { src: img7, alt: "Arquivos digitais organizados em pastas" },
