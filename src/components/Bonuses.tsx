@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gift, ShoppingBag, Megaphone, BookOpen, Calculator, Palette, Video } from "lucide-react";
+import { Gift, ShoppingBag, Megaphone, Calculator, BookOpen, Palette } from "lucide-react";
 
 const bonuses = [
   {
