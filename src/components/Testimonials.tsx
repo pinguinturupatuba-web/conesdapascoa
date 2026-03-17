@@ -1,30 +1,23 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import avatarMaria from "@/assets/avatar-maria.jpg";
-import avatarAna from "@/assets/avatar-ana.jpg";
-import avatarPatricia from "@/assets/avatar-patricia.jpg";
-
 const testimonials = [
   {
     name: "Maria Silva",
     location: "São Paulo, SP",
     text: "Fiz minhas primeiras vendas em 2 dias! Nunca pensei que seria tão fácil. Os moldes são lindos e o passo a passo é super claro. Já recuperei o investimento e estou lucrando!",
     stars: 5,
-    avatar: avatarMaria,
   },
   {
     name: "Ana Oliveira",
     location: "Belo Horizonte, MG",
     text: "Recuperei o investimento muito rápido! Comecei vendendo para amigas e vizinhas, e em uma semana já tinha encomendas de mais de 100 cones. Material incrível!",
     stars: 5,
-    avatar: avatarAna,
   },
   {
     name: "Patrícia Santos",
     location: "Curitiba, PR",
     text: "Muito fácil de fazer, amei! Sou completamente iniciante e consegui montar cones perfeitos logo na primeira tentativa. As aulas explicam tudinho. Super recomendo!",
     stars: 5,
-    avatar: avatarPatricia,
   },
 ];
 
@@ -57,11 +50,9 @@ const Testimonials = () => (
             </div>
             <p className="text-secondary text-base mb-4 italic">"{t.text}"</p>
             <div className="flex items-center gap-3">
-              <img
-                src={t.avatar}
-                alt={t.name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-primary"
-              />
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+                <span className="text-primary font-bold text-lg">{t.name[0]}</span>
+              </div>
               <div>
                 <p className="font-display font-bold text-secondary text-sm">
                   {t.name}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gift, ShoppingBag, Megaphone } from "lucide-react";
+import { Gift, ShoppingBag, Megaphone, BookOpen, Calculator, Palette, Video } from "lucide-react";
 
 const bonuses = [
   {
@@ -19,6 +19,30 @@ const bonuses = [
     title: "Modelos Prontos de Divulgação",
     desc: "Artes profissionais para Instagram, WhatsApp e Facebook prontas para usar. É só postar e vender!",
     value: "R$ 37,00",
+  },
+  {
+    icon: Calculator,
+    title: "Planilha de Precificação e Lucros",
+    desc: "Calcule exatamente quanto cobrar e quanto vai lucrar em cada cone. Nunca mais venda no prejuízo!",
+    value: "R$ 29,00",
+  },
+  {
+    icon: BookOpen,
+    title: "E-book: Como Montar Seu Negócio em Casa",
+    desc: "Guia completo para começar do zero, organizar sua produção e escalar suas vendas sem sair de casa.",
+    value: "R$ 57,00",
+  },
+  {
+    icon: Palette,
+    title: "Pack de Etiquetas e Embalagens",
+    desc: "Modelos exclusivos de etiquetas, tags e embalagens para deixar seus cones com visual profissional.",
+    value: "R$ 39,00",
+  },
+  {
+    icon: Video,
+    title: "Aulas de Fotografia para Produtos",
+    desc: "Aprenda a tirar fotos incríveis dos seus cones usando apenas o celular e venda muito mais!",
+    value: "R$ 47,00",
   },
 ];
 
