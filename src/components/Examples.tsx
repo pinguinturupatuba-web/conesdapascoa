@@ -6,12 +6,18 @@ import img1 from "@/assets/hero-cones.jpg";
 import img2 from "@/assets/templates-preview.jpg";
 import img3 from "@/assets/templates-tablet.jpg";
 import img4 from "@/assets/variety-cones.jpg";
+import img5 from "@/assets/example-ocasioes.png";
+import img6 from "@/assets/example-estoque.png";
+import img7 from "@/assets/example-arquivos.png";
 
 const images = [
   { src: img1, alt: "Cones de Páscoa prontos e decorados" },
   { src: img2, alt: "Moldes variados para imprimir" },
   { src: img3, alt: "Moldes no tablet e cones montados" },
   { src: img4, alt: "Grande variedade de cones coloridos" },
+  { src: img5, alt: "Moldes para todas as ocasiões - Páscoa, Natal, Dia das Mães e mais" },
+  { src: img6, alt: "Estoque de cones prontos para venda" },
+  { src: img7, alt: "Arquivos digitais organizados em pastas" },
 ];
 
 const Examples = () => {
