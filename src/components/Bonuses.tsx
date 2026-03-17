@@ -38,12 +38,6 @@ const bonuses = [
     desc: "Modelos exclusivos de etiquetas, tags e embalagens para deixar seus cones com visual profissional.",
     value: "R$ 39,00",
   },
-  {
-    icon: Video,
-    title: "Aulas de Fotografia para Produtos",
-    desc: "Aprenda a tirar fotos incríveis dos seus cones usando apenas o celular e venda muito mais!",
-    value: "R$ 47,00",
-  },
 ];
 
 const Bonuses = () => (
