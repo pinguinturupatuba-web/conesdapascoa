@@ -50,11 +50,9 @@ const Testimonials = () => (
             </div>
             <p className="text-secondary text-base mb-4 italic">"{t.text}"</p>
             <div className="flex items-center gap-3">
-              <img
-                src={t.avatar}
-                alt={t.name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-primary"
-              />
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+                <span className="text-primary font-bold text-lg">{t.name[0]}</span>
+              </div>
               <div>
                 <p className="font-display font-bold text-secondary text-sm">
                   {t.name}
