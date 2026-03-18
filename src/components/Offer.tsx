@@ -124,18 +124,39 @@ const Offer = () => {
               </p>
             </div>
 
+            <div className="bg-accent/10 rounded-xl px-4 py-2 mb-3">
+              <p className="text-sm font-display font-bold text-accent">✅ VOCÊ RECEBE TUDO DO PLANO ESSENCIAL +</p>
+            </div>
+
+            <ul className="text-left space-y-2 mb-4">
+              {[
+                "🎯 1.000+ moldes de cones exclusivos",
+                "🎁 Moldes temáticos para o ano inteiro",
+                "🎨 Aulas avançadas de personalização",
+                "📈 Estratégias prontas de vendas",
+                "📲 Artes prontas para postar",
+                "💰 Planilha de controle de lucros",
+                "⚡ Suporte prioritário por 30 dias",
+                "🔄 Atualizações grátis por 1 ano",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-secondary">
+                  <Zap className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span className="text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="bg-primary/10 rounded-xl px-4 py-2 mb-3">
+              <p className="text-xs font-display font-bold text-primary">🎯 BÔNUS EXCLUSIVOS (HOJE):</p>
+            </div>
+
             <ul className="text-left space-y-2 mb-8">
               {[
-                "✅ Tudo do Plano Essencial +",
-                "1.000+ moldes de cones exclusivos",
-                "Moldes temáticos (Natal, Dia das Mães…)",
-                "Aulas avançadas de personalização",
-                "Estratégias de vendas para redes sociais",
-                "Artes prontas para Instagram e WhatsApp",
-                "Planilha de controle de lucros",
-                "Suporte prioritário por 30 dias",
-                "Atualizações gratuitas por 1 ano",
-                "Garantia incondicional de 7 dias",
+                "🎁 +200 frases prontas para WhatsApp",
+                "🎁 Lista de fornecedores baratos",
+                "🎁 Ideias de combos lucrativos",
+                '🎁 Guia "primeira venda em 24h"',
+                "🛡️ Garantia incondicional de 7 dias",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-accent flex-shrink-0" />
