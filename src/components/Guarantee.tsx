@@ -2,20 +2,20 @@ import { motion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 import guaranteeBadge from "@/assets/guarantee-badge.png";
 
-const Guarantee = () => (
-  <section className="py-16 md:py-24 bg-card">
+const Guarantee = () =>
+<section className="py-16 md:py-24 bg-card">
     <div className="container">
       <motion.div
-        className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8 bg-background rounded-3xl p-8 md:p-12 shadow-card"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
+      className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8 bg-background rounded-3xl p-8 md:p-12 shadow-card"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}>
+      
         <img
-          src={guaranteeBadge}
-          alt="Selo de Garantia 7 dias"
-          className="w-32 h-32 flex-shrink-0"
-        />
+
+        alt="Selo de Garantia 7 dias"
+        className="w-32 h-32 flex-shrink-0" src="/lovable-uploads/bc0c6dff-4cc5-48a1-9ecd-373fe8de6547.png" />
+      
         <div>
           <h2 className="text-2xl md:text-3xl font-display font-extrabold text-secondary mb-3">
             Garantia Incondicional de 7 Dias
@@ -34,7 +34,7 @@ const Guarantee = () => (
         </div>
       </motion.div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default Guarantee;
