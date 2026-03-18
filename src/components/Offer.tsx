@@ -166,8 +166,8 @@ const Offer = () => {
             </ul>
 
             <a
-              href="#"
-              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full">
+
+              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk">
               
               🚀 QUERO O PLANO PREMIUM
             </a>
