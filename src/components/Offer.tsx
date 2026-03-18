@@ -54,7 +54,7 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 97,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">R$ 10,00
+              <p className="text-5xl font-display font-black text-accent">R$ 10,
 
                 <span className="text-2xl">,00</span>
               </p>
@@ -81,7 +81,7 @@ const Offer = () => {
 
             <a
 
-              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="#https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">
+              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">
               
               🛒 QUERO ESSE PLANO
             </a>
