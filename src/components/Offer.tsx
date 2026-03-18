@@ -8,13 +8,13 @@ const Offer = () => {
   const [seconds, setSeconds] = useState(TOTAL_SECONDS);
 
   useEffect(() => {
-    const id = setInterval(() => setSeconds((s) => (s > 0 ? s - 1 : 0)), 1000);
+    const id = setInterval(() => setSeconds((s) => s > 0 ? s - 1 : 0), 1000);
     return () => clearInterval(id);
   }, []);
 
-  const mins = Math.floor(seconds / 60)
-    .toString()
-    .padStart(2, "0");
+  const mins = Math.floor(seconds / 60).
+  toString().
+  padStart(2, "0");
   const secs = (seconds % 60).toString().padStart(2, "0");
 
   return (
@@ -41,8 +41,8 @@ const Offer = () => {
             className="bg-card rounded-3xl shadow-card p-8 text-center relative overflow-hidden border-2 border-border"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+            viewport={{ once: true }}>
+            
             <div className="flex items-center justify-center gap-2 mb-4">
               <Star className="w-5 h-5 text-primary" />
               <span className="font-display font-bold text-primary text-lg uppercase tracking-wide">
@@ -54,8 +54,8 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 97,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">
-                R$ 10
+              <p className="text-5xl font-display font-black text-accent">R$ 10,00
+
                 <span className="text-2xl">,00</span>
               </p>
               <p className="text-muted-foreground mt-1 text-sm">
@@ -65,24 +65,24 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "500 moldes de cones exclusivos",
-                "Aulas passo a passo completas",
-                "Arquivos prontos para imprimir",
-                "Dicas de venda e precificação",
-                "Bônus: Lista de fornecedores",
-                "Garantia incondicional de 7 dias",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "500 moldes de cones exclusivos",
+              "Aulas passo a passo completas",
+              "Arquivos prontos para imprimir",
+              "Dicas de venda e precificação",
+              "Bônus: Lista de fornecedores",
+              "Garantia incondicional de 7 dias"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-accent flex-shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <a
-              href="#"
-              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full"
-            >
+
+              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="#https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">
+              
               🛒 QUERO ESSE PLANO
             </a>
 
@@ -98,8 +98,8 @@ const Offer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
+            transition={{ delay: 0.1 }}>
+            
             <div className="absolute top-0 left-0 right-0 bg-accent text-accent-foreground text-xs font-display font-bold py-1.5 uppercase tracking-wider">
               ⭐ Mais Vendido — Melhor Custo-Benefício
             </div>
@@ -130,20 +130,20 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-4">
               {[
-                "🎯 1.000+ moldes de cones exclusivos",
-                "🎁 Moldes temáticos para o ano inteiro",
-                "🎨 Aulas avançadas de personalização",
-                "📈 Estratégias prontas de vendas",
-                "📲 Artes prontas para postar",
-                "💰 Planilha de controle de lucros",
-                "⚡ Suporte prioritário por 30 dias",
-                "🔄 Atualizações grátis por 1 ano",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎯 1.000+ moldes de cones exclusivos",
+              "🎁 Moldes temáticos para o ano inteiro",
+              "🎨 Aulas avançadas de personalização",
+              "📈 Estratégias prontas de vendas",
+              "📲 Artes prontas para postar",
+              "💰 Planilha de controle de lucros",
+              "⚡ Suporte prioritário por 30 dias",
+              "🔄 Atualizações grátis por 1 ano"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-accent flex-shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <div className="bg-primary/10 rounded-xl px-4 py-2 mb-3">
@@ -152,23 +152,23 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "🎁 +200 frases prontas para WhatsApp",
-                "🎁 Lista de fornecedores baratos",
-                "🎁 Ideias de combos lucrativos",
-                '🎁 Guia "primeira venda em 24h"',
-                "🛡️ Garantia incondicional de 7 dias",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎁 +200 frases prontas para WhatsApp",
+              "🎁 Lista de fornecedores baratos",
+              "🎁 Ideias de combos lucrativos",
+              '🎁 Guia "primeira venda em 24h"',
+              "🛡️ Garantia incondicional de 7 dias"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-accent flex-shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <a
               href="#"
-              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full"
-            >
+              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full">
+              
               🚀 QUERO O PLANO PREMIUM
             </a>
 
@@ -179,8 +179,8 @@ const Offer = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Offer;
