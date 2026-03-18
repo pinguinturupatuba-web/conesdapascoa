@@ -155,7 +155,7 @@ const Offer = () => {
                 "🎁 +200 frases prontas para WhatsApp",
                 "🎁 Lista de fornecedores baratos",
                 "🎁 Ideias de combos lucrativos",
-                "🎁 Guia "primeira venda em 24h"",
+                '🎁 Guia "primeira venda em 24h"',
                 "🛡️ Garantia incondicional de 7 dias",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-secondary">
