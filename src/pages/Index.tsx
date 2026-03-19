@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import SocialProof from "@/components/SocialProof";
 import StickyCTA from "@/components/StickyCTA";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => (
   <div className="min-h-screen">
@@ -25,6 +26,7 @@ const Index = () => (
     <Footer />
     <SocialProof />
     <StickyCTA />
+    <ExitIntentPopup />
   </div>
 );
 
