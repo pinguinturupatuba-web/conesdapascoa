@@ -45,8 +45,8 @@ const Offer = () => {
             
             <div className="flex items-center justify-center gap-2 mb-4">
               <Star className="w-5 h-5 text-primary" />
-              <span className="font-display font-bold text-primary text-lg uppercase tracking-wide">
-                Plano Essencial
+              <span className="font-display font-bold text-primary text-lg uppercase tracking-wide">PACOTE BÁSICO
+
               </span>
             </div>
 
@@ -81,9 +81,9 @@ const Offer = () => {
 
             <a
 
-              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">
-              
-              🛒 QUERO ESSE PLANO
+              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">QUERO ESSA OFERTA
+
+
             </a>
 
             <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground text-xs">
@@ -107,7 +107,7 @@ const Offer = () => {
             <div className="flex items-center justify-center gap-2 mb-4 mt-6">
               <Crown className="w-5 h-5 text-accent" />
               <span className="font-display font-bold text-accent text-lg uppercase tracking-wide">
-                Plano Premium
+
               </span>
             </div>
 
@@ -115,17 +115,17 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 297,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">
-                R$ 27
+              <p className="text-5xl font-display font-black text-accent">R$ 19,90
+
                 <span className="text-2xl">,90</span>
               </p>
-              <p className="text-muted-foreground mt-1 text-sm">
-                ou 3x de R$ 9,97 sem juros
+              <p className="text-muted-foreground mt-1 text-sm">ou 2x de R$ 9,97 sem juros
+
               </p>
             </div>
 
             <div className="bg-accent/10 rounded-xl px-4 py-2 mb-3">
-              <p className="text-sm font-display font-bold text-accent">✅ VOCÊ RECEBE TUDO DO PLANO ESSENCIAL +</p>
+              <p className="text-sm font-display font-bold text-accent">✅ VOCÊ RECEBE TUDO DO PACOTE BÁSICO+</p>
             </div>
 
             <ul className="text-left space-y-2 mb-4">
@@ -167,9 +167,9 @@ const Offer = () => {
 
             <a
 
-              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk">
-              
-              🚀 QUERO O PLANO PREMIUM
+              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk">🚀 QUERO ESSA OFERTA
+
+
             </a>
 
             <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground text-xs">
