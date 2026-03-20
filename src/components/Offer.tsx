@@ -117,7 +117,7 @@ const Offer = () => {
               </p>
               <p className="text-5xl font-display font-black text-accent">R$ 19,90
 
-                <span className="text-2xl">,90</span>
+                <span className="text-2xl"></span>
               </p>
               <p className="text-muted-foreground mt-1 text-sm">ou 2x de R$ 9,97 sem juros
 
