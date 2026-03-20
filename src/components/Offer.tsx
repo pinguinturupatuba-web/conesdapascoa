@@ -107,7 +107,7 @@ const Offer = () => {
             <div className="flex items-center justify-center gap-2 mb-4 mt-6">
               <Crown className="w-5 h-5 text-accent" />
               <span className="font-display font-bold text-accent text-lg uppercase tracking-wide">
-
+                PACOTE AVANÇADO
               </span>
             </div>
 
