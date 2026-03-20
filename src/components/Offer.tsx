@@ -152,10 +152,10 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-              "🎁 +200 frases prontas para WhatsApp",
+              "🎁 +500 frases prontas para vender no WhatsApp",
               "🎁 Lista de fornecedores baratos",
               "🎁 Ideias de combos lucrativos",
-              '🎁 Guia "primeira venda em 24h"',
+              '🎁 Guia "sua primeira venda em 24h"',
               "🛡️ Garantia incondicional de 7 dias"].
               map((item) =>
               <li key={item} className="flex items-center gap-2 text-secondary">
