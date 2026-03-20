@@ -107,7 +107,7 @@ const Offer = () => {
             <div className="flex items-center justify-center gap-2 mb-4 mt-6">
               <Crown className="w-5 h-5 text-accent" />
               <span className="font-display font-bold text-accent text-lg uppercase tracking-wide">
-
+                PACOTE AVANÇADO
               </span>
             </div>
 
@@ -131,13 +131,13 @@ const Offer = () => {
             <ul className="text-left space-y-2 mb-4">
               {[
               "🎯 1.000+ moldes de cones exclusivos",
-              "🎁 Moldes temáticos para o ano inteiro",
+              "🎁 Moldes temáticos com todas sazonalidades",
               "🎨 Aulas avançadas de personalização",
-              "📈 Estratégias prontas de vendas",
-              "📲 Artes prontas para postar",
-              "💰 Planilha de controle de lucros",
-              "⚡ Suporte prioritário por 30 dias",
-              "🔄 Atualizações grátis por 1 ano"].
+              "📈 Estratégias prontas de vendas na rua e online",
+              "📲 Artes prontas para anunciar seu trabalho",
+              "💰 Planilha de controle de lucros e gastos",
+              "⚡ Suporte prioritário da nossa equipe por 30 dias",
+              "🔄 Atualizações grátis toda semana"].
               map((item) =>
               <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-accent flex-shrink-0" />
@@ -152,10 +152,10 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-              "🎁 +200 frases prontas para WhatsApp",
+              "🎁 +500 frases prontas para vender no WhatsApp",
               "🎁 Lista de fornecedores baratos",
               "🎁 Ideias de combos lucrativos",
-              '🎁 Guia "primeira venda em 24h"',
+              '🎁 Guia "sua primeira venda em 24h"',
               "🛡️ Garantia incondicional de 7 dias"].
               map((item) =>
               <li key={item} className="flex items-center gap-2 text-secondary">
