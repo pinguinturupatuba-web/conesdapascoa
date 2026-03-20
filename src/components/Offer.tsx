@@ -115,8 +115,7 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 297,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">R$ 19,90
-
+              <p className="text-5xl font-display font-black text-accent">R$ 19
                 <span className="text-2xl">,90</span>
               </p>
               <p className="text-muted-foreground mt-1 text-sm">ou 2x de R$ 9,97 sem juros
