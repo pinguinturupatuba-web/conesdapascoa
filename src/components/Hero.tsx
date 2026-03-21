@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import heroCones from "@/assets/hero-cones-new.png";
-import SocialProof from "@/components/SocialProof";
 
 const scrollToOffer = () => {
   document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
@@ -33,9 +32,7 @@ const Hero = () => {
 
 
             </p>
-            <div className="mb-4 min-h-[56px]">
-              <SocialProof />
-            </div>
+
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
