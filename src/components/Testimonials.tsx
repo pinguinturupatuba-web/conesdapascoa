@@ -57,9 +57,7 @@ const Testimonials = () =>
             </div>
             <p className="text-secondary text-base mb-4 italic">"{t.text}"</p>
             <div className="flex items-center gap-3">
-              
-
-          
+              <img src={t.photo} alt={t.name} className="w-12 h-12 rounded-full object-cover" />
               <div>
                 <p className="font-display font-bold text-secondary text-sm">
                   {t.name}
