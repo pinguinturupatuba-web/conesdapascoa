@@ -167,7 +167,7 @@ const Offer = () => {
 
             <a
 
-              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk">🚀 QUERO ESSA OFERTA
+              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">🚀 QUERO ESSA OFERTA
 
 
             </a>
