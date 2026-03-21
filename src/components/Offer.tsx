@@ -81,7 +81,7 @@ const Offer = () => {
 
             <a
 
-              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV">QUERO ESSA OFERTA
+              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">QUERO ESSA OFERTA
 
 
             </a>
