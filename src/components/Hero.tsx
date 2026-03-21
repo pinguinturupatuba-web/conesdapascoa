@@ -25,7 +25,7 @@ const Hero = () => {
               <span className="text-primary">
                 Conquiste sua Renda Extra nesta Páscoa
               </span>{" "}
-              com 500 Moldes de Cones Exclusivos!
+              com 500 Moldes de Cones
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">Receba 500 moldes prontos para imprimir + aulas passo a passo e comece a VENDER cones de Páscoa ainda hoje. Sem experiência !
 
