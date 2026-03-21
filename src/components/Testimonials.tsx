@@ -1,23 +1,30 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import photo1 from "@/assets/testimonial-1.png";
+import photo2 from "@/assets/testimonial-2.png";
+import photo3 from "@/assets/testimonial-3.png";
+
 const testimonials = [
 {
   name: "Maria Silva",
   location: "São Paulo, SP",
   text: "Fiz minhas primeiras vendas em 2 dias! Nunca pensei que seria tão fácil. Os moldes são lindos e o passo a passo é super claro. Já recuperei o investimento e estou lucrando!",
-  stars: 5
+  stars: 5,
+  photo: photo1
 },
 {
   name: "Ana Oliveira",
   location: "Belo Horizonte, MG",
   text: "Recuperei o investimento muito rápido! Comecei vendendo para amigas e vizinhas, e em uma semana já tinha encomendas de mais de 100 cones. Material incrível!",
-  stars: 5
+  stars: 5,
+  photo: photo2
 },
 {
   name: "Patrícia Santos",
   location: "Curitiba, PR",
   text: "Muito fácil de fazer, amei! Sou completamente iniciante e consegui montar cones perfeitos logo na primeira tentativa. As aulas explicam tudinho. Super recomendo!",
-  stars: 5
+  stars: 5,
+  photo: photo3
 }];
 
 
