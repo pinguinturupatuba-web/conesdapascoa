@@ -24,7 +24,7 @@ const Index = () => (
     <Guarantee />
     <FAQ />
     <Footer />
-    <SocialProof />
+    
     <StickyCTA />
     <ExitIntentPopup />
   </div>

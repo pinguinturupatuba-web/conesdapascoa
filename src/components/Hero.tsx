@@ -33,6 +33,9 @@ const Hero = () => {
 
 
             </p>
+            <div className="mb-4 min-h-[56px]">
+              <SocialProof />
+            </div>
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
