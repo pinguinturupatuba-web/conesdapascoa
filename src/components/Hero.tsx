@@ -35,8 +35,7 @@ const Hero = () => {
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
-              
-              🎯 QUERO FAZER DINHEIRO AGORA  
+              🎯 QUERO
             </button>
           </motion.div>
           <motion.div
