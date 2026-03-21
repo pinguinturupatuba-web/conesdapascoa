@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import heroCones from "@/assets/hero-cones-new.png";
+import SocialProof from "@/components/SocialProof";
 
 const scrollToOffer = () => {
   document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
