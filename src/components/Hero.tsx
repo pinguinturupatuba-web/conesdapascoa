@@ -35,7 +35,7 @@ const Hero = () => {
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
-              🎯 QUERO
+              🎯 QUERO GARANTIR MEU ACESSO AGORA
             </button>
           </motion.div>
           <motion.div
