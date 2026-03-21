@@ -32,19 +32,21 @@ const SocialProof = () => {
   }, []);
 
   return (
-    <AnimatePresence>
-      {visible && notification && (
-        <motion.div
-          initial={{ opacity: 0, y: 20, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 20, scale: 0.9 }}
-          className="bg-card shadow-card rounded-xl px-4 py-3 flex items-center gap-3 text-sm max-w-xs mx-auto md:mx-0"
-        >
-          <span className="text-xl">🛒</span>
-          <span className="text-secondary font-medium">{notification}</span>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div className="fixed bottom-20 left-4 z-50">
+      <AnimatePresence>
+        {visible && notification && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.9 }}
+            className="bg-card shadow-card rounded-xl px-4 py-3 flex items-center gap-3 text-sm max-w-xs"
+          >
+            <span className="text-xl">🛒</span>
+            <span className="text-secondary font-medium">{notification}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 
