@@ -8,7 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import Guarantee from "@/components/Guarantee";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-
+import SocialProof from "@/components/SocialProof";
 import StickyCTA from "@/components/StickyCTA";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 
