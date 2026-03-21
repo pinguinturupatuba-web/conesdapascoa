@@ -32,7 +32,7 @@ const SocialProof = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-4 left-4 z-50">
+    <div className="fixed top-4 left-4 z-50">
       <AnimatePresence>
         {visible && notification && (
           <motion.div
