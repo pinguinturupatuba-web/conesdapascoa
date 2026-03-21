@@ -25,7 +25,7 @@ const Hero = () => {
               <span className="text-primary">
                 Conquiste sua Renda Extra nesta Páscoa
               </span>{" "}
-              com 500 Moldes de Cones Exclusivos!
+              com 500 Moldes de Cones
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">Receba 500 moldes prontos para imprimir + aulas passo a passo e comece a VENDER cones de Páscoa ainda hoje. Sem experiência !
 
@@ -35,8 +35,7 @@ const Hero = () => {
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
-              
-              🎯 QUERO FAZER DINHEIRO AGORA  
+              🎯 QUERO
             </button>
           </motion.div>
           <motion.div
