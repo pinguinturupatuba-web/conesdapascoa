@@ -8,7 +8,7 @@ const Offer = () => {
   const [seconds, setSeconds] = useState(TOTAL_SECONDS);
 
   useEffect(() => {
-    const id = setInterval(() => setSeconds((s) => (s > 0 ? s - 1 : 0)), 1000);
+    const id = setInterval(() => setSeconds((s) => s > 0 ? s - 1 : 0), 1000);
     return () => clearInterval(id);
   }, []);
 
@@ -39,8 +39,8 @@ const Offer = () => {
             className="bg-muted/40 rounded-3xl p-8 text-center relative overflow-hidden border-2 border-border opacity-90"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+            viewport={{ once: true }}>
+            
             <div className="flex items-center justify-center gap-2 mb-4">
               <Star className="w-5 h-5 text-muted-foreground" />
               <span className="font-display font-bold text-muted-foreground text-lg uppercase tracking-wide">
@@ -62,24 +62,24 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "500 moldes de cones exclusivos",
-                "Aulas passo a passo completas",
-                "Arquivos prontos para imprimir",
-                "Dicas de venda e precificação",
-                "Bônus: Lista de fornecedores",
-                "Garantia incondicional de 7 dias",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "500 moldes de cones exclusivos",
+              "Aulas passo a passo completas",
+              "Arquivos prontos para imprimir",
+              "Dicas de venda e precificação",
+              "Bônus: Lista de fornecedores",
+              "Garantia incondicional de 7 dias"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <Zap className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <a
               href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}"
-              className="inline-block bg-muted-foreground/80 text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:bg-muted-foreground transition w-full"
-            >
+              className="inline-block bg-muted-foreground/80 text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:bg-muted-foreground transition w-full">
+              
               QUERO ESSA OFERTA
             </a>
           </motion.div>
@@ -89,18 +89,18 @@ const Offer = () => {
             className="bg-card rounded-3xl shadow-card p-8 text-center relative overflow-hidden border-[3px] ring-2 ring-opacity-30"
             style={{
               borderColor: "#16a34a",
-              boxShadow: "0 8px 40px -8px rgba(22, 163, 74, 0.25)",
+              boxShadow: "0 8px 40px -8px rgba(22, 163, 74, 0.25)"
             }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
+            transition={{ delay: 0.1 }}>
+            
             {/* Selo MAIS ESCOLHIDO */}
             <div
               className="absolute top-0 left-0 right-0 text-primary-foreground text-xs font-display font-bold py-2 uppercase tracking-wider text-center"
-              style={{ backgroundColor: "#16a34a" }}
-            >
+              style={{ backgroundColor: "#16a34a" }}>
+              
               ⭐ MAIS ESCOLHIDO — MELHOR CUSTO-BENEFÍCIO
             </div>
 
@@ -108,8 +108,8 @@ const Offer = () => {
               <Crown className="w-6 h-6" style={{ color: "#16a34a" }} />
               <span
                 className="font-display font-bold text-lg uppercase tracking-wide"
-                style={{ color: "#16a34a" }}
-              >
+                style={{ color: "#16a34a" }}>
+                
                 PACOTE AVANÇADO
               </span>
             </div>
@@ -129,8 +129,8 @@ const Offer = () => {
             {/* Tudo do básico */}
             <div
               className="rounded-xl px-4 py-2.5 mb-4"
-              style={{ backgroundColor: "rgba(22, 163, 74, 0.1)" }}
-            >
+              style={{ backgroundColor: "rgba(22, 163, 74, 0.1)" }}>
+              
               <p className="text-sm font-display font-bold" style={{ color: "#16a34a" }}>
                 ✅ VOCÊ RECEBE TUDO DO BÁSICO + MUITO MAIS:
               </p>
@@ -138,19 +138,19 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-5">
               {[
-                "🎯 1.000+ moldes de cones exclusivos",
-                "🎁 Moldes temáticos para o ano inteiro",
-                "🎨 Aulas avançadas de personalização",
-                "📈 Estratégias prontas de vendas",
-                "📲 Artes prontas para postar",
-                "💰 Planilha de controle de lucros",
-                "⚡ Suporte prioritário por 30 dias",
-                "🔄 Atualizações grátis por 1 ano",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎯 1.000+ moldes de cones exclusivos",
+              "🎁 Moldes temáticos para o ano inteiro",
+              "🎨 Aulas avançadas de personalização",
+              "📈 Estratégias prontas de vendas",
+              "📲 Artes prontas para postar",
+              "💰 Planilha de controle de lucros",
+              "⚡ Suporte prioritário por 30 dias",
+              "🔄 Atualizações grátis por 1 ano"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             {/* Bônus */}
@@ -162,22 +162,22 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-5">
               {[
-                "🎁 +200 frases prontas para WhatsApp",
-                "🎁 Lista de fornecedores baratos",
-                "🎁 Ideias de combos lucrativos",
-                '🎁 Guia "primeira venda em 24h"',
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎁 +200 frases prontas para WhatsApp",
+              "🎁 Lista de fornecedores baratos",
+              "🎁 Ideias de combos lucrativos",
+              '🎁 Guia "primeira venda em 24h"'].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             {/* Diferenciais */}
             <div
               className="rounded-xl px-4 py-2.5 mb-4"
-              style={{ backgroundColor: "rgba(22, 163, 74, 0.08)" }}
-            >
+              style={{ backgroundColor: "rgba(22, 163, 74, 0.08)" }}>
+              
               <p className="text-xs font-display font-bold" style={{ color: "#16a34a" }}>
                 🆕 DIFERENCIAIS:
               </p>
@@ -185,29 +185,29 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "🎓 Certificado de conclusão profissional",
-                "📊 Método validado para iniciantes",
-                "🔒 Acesso imediato e vitalício",
-                "💵 Possibilidade de lucro rápido nas primeiras vendas",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎓 Certificado de conclusão profissional",
+              "📊 Método validado para iniciantes",
+              "🔒 Acesso imediato e vitalício",
+              "💵 Possibilidade de lucro rápido nas primeiras vendas"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <a
               href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}"
               className="inline-block text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full"
-              style={{ backgroundColor: "#16a34a", boxShadow: "0 8px 30px -8px rgba(22, 163, 74, 0.5)" }}
-            >
-              QUERO COMEÇAR A VENDER AGORA
+              style={{ backgroundColor: "#16a34a", boxShadow: "0 8px 30px -8px rgba(22, 163, 74, 0.5)" }}>QUERO ESSA OFERTA
+
+
             </a>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Offer;
