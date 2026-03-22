@@ -36,7 +36,7 @@ const Offer = () => {
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto items-start">
           {/* Plano Básico - Neutro/Cinza */}
           <motion.div
-            className="bg-muted/40 rounded-3xl p-8 text-center relative overflow-hidden border-2 border-border opacity-90"
+            className="rounded-3xl p-8 text-center relative overflow-hidden border-2 border-border opacity-90 bg-primary-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
