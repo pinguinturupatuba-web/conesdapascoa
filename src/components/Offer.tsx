@@ -199,7 +199,7 @@ const Offer = () => {
             <a
               href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}"
               className="inline-block text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full"
-              style={{ backgroundColor: "#16a34a", boxShadow: "0 8px 30px -8px rgba(22, 163, 74, 0.5)" }}>QUERO ESSA OFERTA
+              style={{ backgroundColor: "#16a34a", boxShadow: "0 8px 30px -8px rgba(22, 163, 74, 0.5)" }}>🚀 QUERO ESSA OFERTA
 
 
             </a>
