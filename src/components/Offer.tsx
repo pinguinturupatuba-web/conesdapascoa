@@ -43,7 +43,7 @@ const Offer = () => {
             
             <div className="flex items-center justify-center gap-2 mb-4">
               <Star className="w-5 h-5 text-muted-foreground" />
-              <span className="font-display font-bold text-muted-foreground text-lg uppercase tracking-wide">
+              <span className="font-display font-bold text-lg uppercase tracking-wide text-accent">
                 PACOTE BÁSICO
               </span>
             </div>
@@ -52,7 +52,7 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 97,00
               </p>
-              <p className="text-5xl font-display font-black text-secondary">
+              <p className="text-5xl font-display font-black text-accent">
                 R$ 10<span className="text-2xl">,00</span>
               </p>
               <p className="text-muted-foreground mt-1 text-sm">
@@ -78,7 +78,7 @@ const Offer = () => {
 
             <a
               href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}"
-              className="inline-block bg-muted-foreground/80 text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:bg-muted-foreground transition w-full">
+              className="inline-block text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full transition w-full bg-accent">
               
               QUERO ESSA OFERTA
             </a>
