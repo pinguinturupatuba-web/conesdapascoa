@@ -54,10 +54,7 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 97,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">R$ 9,90
-
-                <span className="text-2xl">,00</span>
-              </p>
+              <p className="text-5xl font-display font-black text-accent">R$ 9,90</p>
               <p className="text-muted-foreground mt-1 text-sm">
                 Pagamento único
               </p>
