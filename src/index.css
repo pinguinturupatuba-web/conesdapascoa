@@ -108,8 +108,4 @@
   .animate-float-notification {
     animation: float-notification 4s ease-in-out;
   }
-
-  #lovable-badge { 
-  display: none !important; 
-}
 }
