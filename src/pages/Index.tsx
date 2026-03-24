@@ -15,12 +15,12 @@ import ExitIntentPopup from "@/components/ExitIntentPopup";
 const Index = () => (
   <div className="min-h-screen">
     <Hero />
+    <Testimonials />
+    <Offer />
     <WhatYouGet />
     <Benefits />
     <Bonuses />
-    <Offer />
     <Examples />
-    <Testimonials />
     <Guarantee />
     <FAQ />
     <Footer />
