@@ -12,9 +12,7 @@ const Offer = () => {
     return () => clearInterval(id);
   }, []);
 
-  const mins = Math.floor(seconds / 60).
-  toString().
-  padStart(2, "0");
+  const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
   const secs = (seconds % 60).toString().padStart(2, "0");
 
   return (
@@ -24,7 +22,7 @@ const Offer = () => {
         <div className="max-w-4xl mx-auto bg-destructive/10 rounded-xl p-3 mb-10 flex items-center justify-center gap-2">
           <Clock className="w-5 h-5 text-destructive" />
           <span className="font-display font-bold text-destructive text-lg">
-            OFERTA EXPIRA EM: {mins}:{secs}
+            OFERTA VÁLIDA SOMENTE HOJE — {mins}:{secs}
           </span>
         </div>
 
@@ -32,11 +30,11 @@ const Offer = () => {
           Escolha o Plano Ideal Para Você
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Oferta Especial por Tempo Limitado
+          Menos que o preço de um chocolate… e pode mudar sua Páscoa!
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* Plano Essencial */}
+          {/* Plano Básico */}
           <motion.div
             className="bg-card rounded-3xl shadow-card p-8 text-center relative overflow-hidden border-2 border-border"
             initial={{ opacity: 0, y: 20 }}
@@ -45,42 +43,40 @@ const Offer = () => {
             
             <div className="flex items-center justify-center gap-2 mb-4">
               <Star className="w-5 h-5 text-primary" />
-              <span className="font-display font-bold text-primary text-lg uppercase tracking-wide">PACOTE BÁSICO
-
-              </span>
+              <span className="font-display font-bold text-primary text-lg uppercase tracking-wide">PACOTE BÁSICO</span>
             </div>
 
             <div className="my-4">
               <p className="text-muted-foreground text-base line-through">
                 De R$ 97,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">R$ 9,90</p>
+              <p className="text-5xl font-display font-black text-accent">
+                R$ 9,<span className="text-3xl align-top">90</span>
+              </p>
               <p className="text-muted-foreground mt-1 text-sm">
-                Pagamento único
+                Pagamento único · Acesso imediato
               </p>
             </div>
 
             <ul className="text-left space-y-2 mb-8">
               {[
-              "500 moldes de cones exclusivos",
-              "Aulas passo a passo completas",
-              "Arquivos prontos para imprimir",
-              "Dicas de venda e precificação",
-              "Bônus: Lista de fornecedores",
-              "Garantia incondicional de 7 dias"].
-              map((item) =>
-              <li key={item} className="flex items-center gap-2 text-secondary">
-                  <Zap className="w-4 h-4 text-accent flex-shrink-0" />
+                "✅ 500 moldes de cones exclusivos",
+                "✅ Aulas passo a passo completas",
+                "✅ Arquivos prontos para imprimir",
+                "✅ Dicas de venda e precificação",
+                "✅ Bônus: Lista de fornecedores",
+                "🛡️ Garantia incondicional de 7 dias",
+              ].map((item) =>
+                <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
             </ul>
 
             <a
-
-              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">QUERO ESSA OFERTA
-
-
+              className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full"
+              href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">
+              QUERO LUCRAR COM CONES AGORA
             </a>
 
             <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground text-xs">
@@ -104,7 +100,7 @@ const Offer = () => {
             <div className="flex items-center justify-center gap-2 mb-4 mt-6">
               <Crown className="w-5 h-5 text-accent" />
               <span className="font-display font-bold text-accent text-lg uppercase tracking-wide">
-
+                PACOTE PREMIUM
               </span>
             </div>
 
@@ -112,61 +108,55 @@ const Offer = () => {
               <p className="text-muted-foreground text-base line-through">
                 De R$ 297,00
               </p>
-              <p className="text-5xl font-display font-black text-accent">R$ 19,90
-
-                <span className="text-2xl"></span>
+              <p className="text-5xl font-display font-black text-accent">
+                R$ 19,<span className="text-3xl align-top">90</span>
               </p>
-              <p className="text-muted-foreground mt-1 text-sm">ou 2x de R$ 9,97 sem juros
-
-              </p>
+              <p className="text-muted-foreground mt-1 text-sm">ou 2x de R$ 9,97 sem juros</p>
             </div>
 
             <div className="bg-accent/10 rounded-xl px-4 py-2 mb-3">
-              <p className="text-sm font-display font-bold text-accent">✅ VOCÊ RECEBE TUDO DO PACOTE BÁSICO+</p>
+              <p className="text-sm font-display font-bold text-accent">✅ TUDO DO BÁSICO + MUITO MAIS:</p>
             </div>
 
             <ul className="text-left space-y-2 mb-4">
               {[
-              "🎯 1.000+ moldes de cones exclusivos",
-              "🎁 Moldes temáticos para o ano inteiro",
-              "🎨 Aulas avançadas de personalização",
-              "📈 Estratégias prontas de vendas",
-              "📲 Artes prontas para postar",
-              "💰 Planilha de controle de lucros",
-              "⚡ Suporte prioritário por 30 dias",
-              "🔄 Atualizações grátis por 1 ano"].
-              map((item) =>
-              <li key={item} className="flex items-center gap-2 text-secondary">
-                  <Zap className="w-4 h-4 text-accent flex-shrink-0" />
+                "🎯 1.000+ moldes de cones exclusivos",
+                "🎁 Moldes temáticos para o ano inteiro",
+                "🎨 Aulas avançadas de personalização",
+                "📈 Estratégias prontas de vendas",
+                "📲 Artes prontas para postar",
+                "💰 Planilha de controle de lucros",
+                "⚡ Suporte prioritário por 30 dias",
+                "🔄 Atualizações grátis por 1 ano",
+              ].map((item) =>
+                <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
             </ul>
 
             <div className="bg-primary/10 rounded-xl px-4 py-2 mb-3">
-              <p className="text-xs font-display font-bold text-primary">🎯 BÔNUS EXCLUSIVOS (HOJE):</p>
+              <p className="text-xs font-display font-bold text-primary">🎯 BÔNUS EXCLUSIVOS (SÓ HOJE):</p>
             </div>
 
             <ul className="text-left space-y-2 mb-8">
               {[
-              "🎁 +200 frases prontas para WhatsApp",
-              "🎁 Lista de fornecedores baratos",
-              "🎁 Ideias de combos lucrativos",
-              '🎁 Guia "primeira venda em 24h"',
-              "🛡️ Garantia incondicional de 7 dias"].
-              map((item) =>
-              <li key={item} className="flex items-center gap-2 text-secondary">
-                  <Zap className="w-4 h-4 text-accent flex-shrink-0" />
+                "🎁 +200 frases prontas para WhatsApp",
+                "🎁 Lista de fornecedores baratos",
+                "🎁 Ideias de combos lucrativos",
+                '🎁 Guia "primeira venda em 24h"',
+                "🛡️ Garantia incondicional de 7 dias",
+              ].map((item) =>
+                <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
             </ul>
 
             <a
-
-              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full" href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">🚀 QUERO ESSA OFERTA
-
-
+              className="inline-block gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition w-full"
+              href="https://www.ggcheckout.com/checkout/v5/gp8EL6J3RSTTK44Kdkrk?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">
+              🚀 QUERO FAZER MINHA PRIMEIRA VENDA HOJE
             </a>
 
             <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground text-xs">
@@ -176,8 +166,8 @@ const Offer = () => {
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Offer;
