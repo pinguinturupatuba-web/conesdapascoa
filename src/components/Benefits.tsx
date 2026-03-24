@@ -2,23 +2,22 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const benefits = [
-  "Perfeito para iniciantes — não precisa de nenhuma experiência prévia",
-  "Custo super baixo para começar: apenas papel, impressora e cola",
-  "Alto potencial de lucro — cada cone pode render até R$ 15,00",
-  "Demanda altíssima na Páscoa — venda rápida garantida",
-  "Trabalhe de casa, no seu ritmo, sem chefe",
-  "Material pronto — é só imprimir, montar e vender",
+  "Zero experiência necessária — comece do absoluto zero",
+  "Investimento mínimo: papel, impressora e cola",
+  "Lucro de até R$ 15 por cone (custo de R$ 1,50)",
+  "Demanda altíssima na Páscoa — venda rápida",
+  "Trabalhe de casa, no seu ritmo",
+  "Material pronto — imprima, monte e venda hoje",
 ];
 
 const Benefits = () => (
   <section className="py-16 md:py-24">
     <div className="container">
       <h2 className="text-3xl md:text-4xl font-display font-extrabold text-secondary text-center mb-4">
-        Por Que Escolher Nosso Material?
+        Por Que Isso Funciona?
       </h2>
       <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-        Centenas de pessoas já transformaram papel em renda extra com nossos
-        moldes. Veja por que esse é o caminho mais fácil para lucrar nesta Páscoa:
+        Simples, rápido e com lucro real:
       </p>
       <div className="max-w-2xl mx-auto space-y-4">
         {benefits.map((b, i) => (

@@ -21,7 +21,7 @@ const StickyCTA = () => {
         onClick={scrollToOffer}
         className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-base py-3 rounded-full"
       >
-        🎯 QUERO LUCRAR NA PÁSCOA
+        🎯 QUERO LUCRAR COM CONES AGORA
       </button>
     </div>
   );

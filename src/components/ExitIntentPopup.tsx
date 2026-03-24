@@ -10,13 +10,11 @@ const ExitIntentPopup = () => {
   const handleExitIntent = useCallback((e: MouseEvent) => {
     if (e.clientY <= 5 && stage === "idle") {
       setStage("exit");
-      // Only trigger once
       document.removeEventListener("mouseout", handleExitIntent);
     }
   }, [stage]);
 
   useEffect(() => {
-    // Delay registering to avoid firing on page load
     const timeout = setTimeout(() => {
       document.addEventListener("mouseout", handleExitIntent);
     }, 5000);
@@ -27,7 +25,6 @@ const ExitIntentPopup = () => {
     };
   }, [handleExitIntent]);
 
-  // Mobile: trigger after 45s of inactivity or scroll-up pattern
   useEffect(() => {
     if (stage !== "idle") return;
 
@@ -67,7 +64,6 @@ const ExitIntentPopup = () => {
         {/* ── EXIT POPUP ── */}
         {stage === "exit" && (
           <div className="relative">
-            {/* Top urgency bar */}
             <div className="bg-destructive text-destructive-foreground text-center py-2 px-4 text-sm font-bold font-display flex items-center justify-center gap-2">
               <AlertTriangle className="w-4 h-4" />
               ESPERA! NÃO SAIA AINDA!
@@ -92,7 +88,7 @@ const ExitIntentPopup = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                   <Zap className="w-4 h-4 text-primary" />
-                  500+ moldes prontos por apenas R$ 10,00
+                  500+ moldes prontos por apenas R$ 9,90
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                   <Gift className="w-4 h-4 text-accent" />
@@ -104,7 +100,7 @@ const ExitIntentPopup = () => {
                 onClick={scrollToOffer}
                 className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg py-4 rounded-full animate-pulse-cta flex items-center justify-center gap-2"
               >
-                🎯 QUERO COMEÇAR A LUCRAR AGORA
+                🎯 QUERO FAZER MINHA PRIMEIRA VENDA HOJE
                 <ChevronRight className="w-5 h-5" />
               </button>
 
@@ -138,7 +134,7 @@ const ExitIntentPopup = () => {
               </p>
 
               <div className="bg-muted rounded-xl p-4 space-y-2 text-left text-sm">
-                <p className="font-bold text-foreground mb-2">✅ Tudo do Plano Essencial +</p>
+                <p className="font-bold text-foreground mb-2">✅ Tudo do Plano Básico +</p>
                 {[
                   "🎯 1.000+ moldes exclusivos prontos pra imprimir",
                   "🎁 Moldes temáticos pro ano inteiro",
@@ -153,9 +149,9 @@ const ExitIntentPopup = () => {
               </div>
 
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground line-through">De R$ 97,00</p>
+                <p className="text-sm text-muted-foreground line-through">De R$ 297,00</p>
                 <p className="text-3xl font-display font-black text-primary">
-                  R$ 27,90
+                  R$ 19,<span className="text-xl align-top">90</span>
                 </p>
                 <p className="text-xs text-muted-foreground">Pagamento único · Acesso imediato</p>
               </div>
@@ -193,7 +189,7 @@ const ExitIntentPopup = () => {
               </DialogTitle>
 
               <p className="text-muted-foreground text-base leading-relaxed">
-                Se você não consegue investir <strong className="text-foreground">R$ 10 pra mudar de vida</strong>,
+                Se você não consegue investir <strong className="text-foreground">R$ 9,90 pra mudar de vida</strong>,
                 talvez você nunca comece. Pensa comigo: um único cone personalizado já se paga.{" "}
                 <strong className="text-primary">Imagina 500 moldes prontos nas suas mãos?</strong>
               </p>
@@ -210,10 +206,10 @@ const ExitIntentPopup = () => {
 
               <div className="space-y-1">
                 <p className="text-4xl font-display font-black text-primary">
-                  R$ 10,00
+                  R$ 9,<span className="text-2xl align-top">90</span>
                 </p>
                 <p className="text-sm text-muted-foreground font-semibold">
-                  Menos que um lanche no shopping 🍔
+                  Menos que o preço de um chocolate 🍫
                 </p>
               </div>
 
@@ -221,7 +217,7 @@ const ExitIntentPopup = () => {
                 onClick={scrollToOffer}
                 className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg py-4 rounded-full animate-pulse-cta flex items-center justify-center gap-2"
               >
-                😤 TÁ BOM, EU QUERO POR R$ 10!
+                😤 TÁ BOM, EU QUERO POR R$ 9,90!
                 <ChevronRight className="w-5 h-5" />
               </button>
 

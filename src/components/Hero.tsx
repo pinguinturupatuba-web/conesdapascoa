@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import heroCones from "@/assets/hero-cones-new.png";
 
 const scrollToOffer = () => {
   document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
@@ -21,22 +19,20 @@ const Hero = () => {
               🐰 Edição Limitada — Páscoa 2026
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-secondary leading-tight mb-6">
-              Transforme Papel em Lucro:{" "}
+              Como Fazer Até R$100 Por Dia{" "}
               <span className="text-primary">
-                Conquiste sua Renda Extra nesta Páscoa
+                Vendendo Cones de Páscoa
               </span>{" "}
-              com 500 Moldes de Cones
+              (Mesmo Começando do Zero)
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">Receba 500 moldes prontos para imprimir + aulas passo a passo e comece a VENDER cones de Páscoa ainda hoje. Sem experiência !
-
-
-
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
+              Comece hoje mesmo, sem experiência e com baixo investimento. Receba 500 moldes prontos + aulas passo a passo e faça sua primeira venda ainda esta semana!
             </p>
 
             <button
               onClick={scrollToOffer}
               className="gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full animate-pulse-cta hover:brightness-110 transition">
-              🎯 QUERO GARANTIR MEU ACESSO AGORA
+              🎯 QUERO FAZER MINHA PRIMEIRA VENDA HOJE
             </button>
           </motion.div>
           <motion.div
@@ -46,15 +42,14 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}>
             
             <img
-
               alt="Cones de Páscoa lindos e coloridos prontos para vender"
               className="rounded-2xl shadow-card w-full max-w-lg mx-auto" src="/lovable-uploads/71a25cbe-cd23-4720-8b5e-10bce025bf84.png" />
             
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Hero;
