@@ -60,14 +60,14 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "✅ 500 moldes de cones exclusivos",
-                "✅ Aulas passo a passo completas",
-                "✅ Arquivos prontos para imprimir",
-                "✅ Dicas de venda e precificação",
-                "✅ Bônus: Lista de fornecedores",
-                "🛡️ Garantia incondicional de 7 dias",
-              ].map((item) =>
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "✅ 500 moldes de cones exclusivos",
+              "✅ Aulas passo a passo completas",
+              "✅ Arquivos prontos para imprimir",
+              "✅ Dicas de venda e precificação",
+              "✅ Bônus: Lista de fornecedores",
+              "🛡️ Garantia incondicional de 7 dias"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
@@ -76,7 +76,7 @@ const Offer = () => {
             <a
               className="inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-full hover:brightness-110 transition w-full"
               href="https://www.ggcheckout.com/checkout/v5/B1OgIv1BMtkdFVYPBNkV?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}">
-              QUERO LUCRAR COM CONES AGORA
+              QUERO LUCRAR AGORA
             </a>
 
             <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground text-xs">
@@ -120,16 +120,16 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-4">
               {[
-                "🎯 1.000+ moldes de cones exclusivos",
-                "🎁 Moldes temáticos para o ano inteiro",
-                "🎨 Aulas avançadas de personalização",
-                "📈 Estratégias prontas de vendas",
-                "📲 Artes prontas para postar",
-                "💰 Planilha de controle de lucros",
-                "⚡ Suporte prioritário por 30 dias",
-                "🔄 Atualizações grátis por 1 ano",
-              ].map((item) =>
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎯 1.000+ moldes de cones exclusivos",
+              "🎁 Moldes temáticos para o ano inteiro",
+              "🎨 Aulas avançadas de personalização",
+              "📈 Estratégias prontas de vendas",
+              "📲 Artes prontas para postar",
+              "💰 Planilha de controle de lucros",
+              "⚡ Suporte prioritário por 30 dias",
+              "🔄 Atualizações grátis por 1 ano"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
@@ -141,13 +141,13 @@ const Offer = () => {
 
             <ul className="text-left space-y-2 mb-8">
               {[
-                "🎁 +200 frases prontas para WhatsApp",
-                "🎁 Lista de fornecedores baratos",
-                "🎁 Ideias de combos lucrativos",
-                '🎁 Guia "primeira venda em 24h"',
-                "🛡️ Garantia incondicional de 7 dias",
-              ].map((item) =>
-                <li key={item} className="flex items-center gap-2 text-secondary">
+              "🎁 +200 frases prontas para WhatsApp",
+              "🎁 Lista de fornecedores baratos",
+              "🎁 Ideias de combos lucrativos",
+              '🎁 Guia "primeira venda em 24h"',
+              "🛡️ Garantia incondicional de 7 dias"].
+              map((item) =>
+              <li key={item} className="flex items-center gap-2 text-secondary">
                   <span className="text-sm">{item}</span>
                 </li>
               )}
@@ -166,8 +166,8 @@ const Offer = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Offer;
