@@ -77,11 +77,11 @@ const ExitIntentPopup = () => {
             <div className="p-6 text-center space-y-4">
               <DialogTitle className="text-2xl md:text-3xl font-display font-black text-foreground leading-tight">
                 Você está prestes a perder a chance de{" "}
-                <span className="text-primary">lucrar na Páscoa!</span>
+                <span className="text-primary">destravar o inglês com música!</span>
               </DialogTitle>
 
               <p className="text-muted-foreground text-base">
-                Milhares de pessoas já estão lucrando com cones personalizados.{" "}
+                Milhares de alunos já estão aprendendo inglês ouvindo as músicas que amam.{" "}
                 <strong className="text-foreground">Você vai ficar de fora?</strong>
               </p>
 
@@ -92,7 +92,7 @@ const ExitIntentPopup = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                   <Zap className="w-4 h-4 text-primary" />
-                  500+ moldes prontos por apenas R$ 10,00
+                  Guia completo por menos de R$ 10
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                   <Gift className="w-4 h-4 text-accent" />
@@ -104,7 +104,7 @@ const ExitIntentPopup = () => {
                 onClick={scrollToOffer}
                 className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg py-4 rounded-full animate-pulse-cta flex items-center justify-center gap-2"
               >
-                🎯 QUERO COMEÇAR A LUCRAR AGORA
+                🎧 QUERO COMEÇAR AGORA
                 <ChevronRight className="w-5 h-5" />
               </button>
 
@@ -129,22 +129,22 @@ const ExitIntentPopup = () => {
 
             <div className="p-6 text-center space-y-4">
               <DialogTitle className="text-2xl md:text-3xl font-display font-black text-foreground leading-tight">
-                Que tal <span className="text-primary">DOBRAR seus lucros</span> com o Kit Premium?
+                Que tal <span className="text-primary">acelerar de vez</span> com o Plano Premium?
               </DialogTitle>
 
               <p className="text-muted-foreground text-base">
-                Você ia sair com 500 moldes… mas e se levasse{" "}
-                <strong className="text-foreground">mais de 1.000 moldes + estratégias de venda + suporte?</strong>
+                Você ia sair com o guia essencial… mas e se levasse{" "}
+                <strong className="text-foreground">guia em áudio + Inglês com Filmes + 8 bônus + suporte VIP?</strong>
               </p>
 
               <div className="bg-muted rounded-xl p-4 space-y-2 text-left text-sm">
                 <p className="font-bold text-foreground mb-2">✅ Tudo do Plano Essencial +</p>
                 {[
-                  "🎯 1.000+ moldes exclusivos prontos pra imprimir",
-                  "🎁 Moldes temáticos pro ano inteiro",
-                  "📈 Estratégias prontas de vendas (Instagram, WhatsApp)",
-                  "📲 Artes prontas para postar",
-                  "💰 Planilha de controle de lucros",
+                  "🎙️ Guia em áudio (versão podcast)",
+                  "🎬 Guia Inglês com Filmes Famosos",
+                  "📈 Trilha avançada de speaking",
+                  "📲 Pacote de expressões para o dia a dia",
+                  "💬 Grupo VIP com novas músicas toda semana",
                   "⚡ Suporte prioritário por 30 dias",
                   "🔄 Atualizações grátis por 1 ano",
                 ].map((item) => (
@@ -153,9 +153,9 @@ const ExitIntentPopup = () => {
               </div>
 
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground line-through">De R$ 97,00</p>
+                <p className="text-sm text-muted-foreground line-through">De R$ 129,70</p>
                 <p className="text-3xl font-display font-black text-primary">
-                  R$ 27,90
+                  R$ 16,97
                 </p>
                 <p className="text-xs text-muted-foreground">Pagamento único · Acesso imediato</p>
               </div>
@@ -164,7 +164,7 @@ const ExitIntentPopup = () => {
                 onClick={scrollToOffer}
                 className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg py-4 rounded-full animate-pulse-cta flex items-center justify-center gap-2"
               >
-                🚀 QUERO O KIT PREMIUM AGORA
+                🚀 QUERO A PREMIUM AGORA
                 <ChevronRight className="w-5 h-5" />
               </button>
 
@@ -193,24 +193,24 @@ const ExitIntentPopup = () => {
               </DialogTitle>
 
               <p className="text-muted-foreground text-base leading-relaxed">
-                Se você não consegue investir <strong className="text-foreground">R$ 10 pra mudar de vida</strong>,
-                talvez você nunca comece. Pensa comigo: um único cone personalizado já se paga.{" "}
-                <strong className="text-primary">Imagina 500 moldes prontos nas suas mãos?</strong>
+                Se você não consegue investir <strong className="text-foreground">menos de R$ 10 pra finalmente falar inglês</strong>,
+                talvez você nunca comece. Pensa: um app de idioma cobra mais que isso só na primeira semana.{" "}
+                <strong className="text-primary">E você vai levar o guia inteiro pra sempre.</strong>
               </p>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-4 text-left space-y-2">
                 <p className="font-bold text-destructive text-sm">⚠️ O que você PERDE saindo agora:</p>
                 <ul className="text-sm text-foreground space-y-1">
-                  <li>❌ 500+ moldes prontos pra imprimir</li>
-                  <li>❌ 6 bônus exclusivos (valor real: R$ 200+)</li>
-                  <li>❌ A chance de faturar já nessa Páscoa</li>
+                  <li>❌ 100+ músicas com tradução e pronúncia</li>
+                  <li>❌ 6 bônus exclusivos (valor real: R$ 250+)</li>
+                  <li>❌ A chance de finalmente entender o que canta</li>
                   <li>❌ Esse preço NUNCA mais será tão baixo</li>
                 </ul>
               </div>
 
               <div className="space-y-1">
                 <p className="text-4xl font-display font-black text-primary">
-                  R$ 10,00
+                  R$ 9,97
                 </p>
                 <p className="text-sm text-muted-foreground font-semibold">
                   Menos que um lanche no shopping 🍔
@@ -221,7 +221,7 @@ const ExitIntentPopup = () => {
                 onClick={scrollToOffer}
                 className="w-full gradient-cta shadow-cta text-primary-foreground font-display font-bold text-lg py-4 rounded-full animate-pulse-cta flex items-center justify-center gap-2"
               >
-                😤 TÁ BOM, EU QUERO POR R$ 10!
+                😤 TÁ BOM, EU QUERO POR R$ 9,97!
                 <ChevronRight className="w-5 h-5" />
               </button>
 
@@ -229,7 +229,7 @@ const ExitIntentPopup = () => {
                 onClick={close}
                 className="text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
-                Não, prefiro continuar sem ganhar dinheiro
+                Não, prefiro continuar travado no inglês
               </button>
             </div>
           </div>
