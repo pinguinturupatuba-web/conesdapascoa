@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 48 100% 96%;
-    --foreground: 24 90% 14%;
+    --background: 230 35% 9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 24 90% 14%;
+    --card: 230 30% 13%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 24 90% 14%;
+    --popover: 230 30% 13%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 25 95% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 230 50% 10%;
 
-    --secondary: 24 90% 14%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 230 50% 10%;
 
-    --muted: 40 60% 92%;
-    --muted-foreground: 24 30% 40%;
+    --muted: 230 25% 18%;
+    --muted-foreground: 230 15% 70%;
 
-    --accent: 142 71% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 158 75% 48%;
+    --accent-foreground: 230 50% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 36 40% 85%;
-    --input: 36 40% 85%;
-    --ring: 25 95% 53%;
+    --border: 230 25% 22%;
+    --input: 230 25% 22%;
+    --ring: 45 100% 55%;
 
     --radius: 1rem;
 
@@ -64,29 +64,28 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
 
 @layer utilities {
-  .text-display {
-    font-family: var(--font-display);
-  }
-
-  .text-body {
-    font-family: var(--font-body);
-  }
+  .text-display { font-family: var(--font-display); }
+  .text-body { font-family: var(--font-body); }
 
   .gradient-cta {
-    background: linear-gradient(135deg, hsl(25 95% 53%), hsl(20 95% 45%));
+    background: linear-gradient(135deg, hsl(45 100% 55%), hsl(38 100% 50%));
   }
 
   .shadow-cta {
-    box-shadow: 0 8px 30px -8px hsl(25 95% 53% / 0.5);
+    box-shadow: 0 8px 30px -8px hsl(45 100% 55% / 0.55);
   }
 
   .shadow-card {
-    box-shadow: 0 4px 20px -4px hsl(24 90% 14% / 0.08);
+    box-shadow: 0 4px 24px -4px hsl(230 60% 4% / 0.5);
+  }
+
+  .text-highlight {
+    color: hsl(var(--primary));
   }
 
   @keyframes pulse-cta {

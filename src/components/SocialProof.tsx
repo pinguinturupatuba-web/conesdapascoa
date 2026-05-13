@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const names = [
-  "Maria", "Ana", "Patrícia", "Camila", "Juliana",
-  "Fernanda", "Beatriz", "Larissa", "Carla", "Renata",
+  "Clara", "João Pedro", "Bruno", "Sandra", "Eduardo",
+  "Camila", "Rafael", "Larissa", "Carlos", "Renata",
+  "Paula", "Marcos", "Beatriz", "Felipe", "Juliana",
 ];
 const cities = [
   "São Paulo", "Rio de Janeiro", "Belo Horizonte",
@@ -18,7 +19,7 @@ const SocialProof = () => {
     const show = () => {
       const name = names[Math.floor(Math.random() * names.length)];
       const city = cities[Math.floor(Math.random() * cities.length)];
-      setNotification(`${name} de ${city} acabou de garantir o kit!`);
+      setNotification(`${name} de ${city} acabou de garantir o guia!`);
       setVisible(true);
       setTimeout(() => setVisible(false), 3500);
     };
@@ -39,9 +40,9 @@ const SocialProof = () => {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="bg-card shadow-card rounded-xl px-4 py-3 flex items-center gap-3 text-sm max-w-xs"
+            className="bg-card shadow-card rounded-xl px-4 py-3 flex items-center gap-3 text-sm max-w-xs border border-border"
           >
-            <span className="text-xl">🛒</span>
+            <span className="text-xl">🎧</span>
             <span className="text-secondary font-medium">{notification}</span>
           </motion.div>
         )}

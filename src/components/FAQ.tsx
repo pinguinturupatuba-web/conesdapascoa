@@ -7,35 +7,47 @@ import {
 
 const faqs = [
   {
-    q: "Preciso ter experiência em artesanato?",
-    a: "Não! O material foi criado especialmente para iniciantes. As aulas passo a passo ensinam tudo desde o zero, de forma simples e prática. Você vai conseguir fazer cones perfeitos mesmo que nunca tenha feito artesanato antes.",
+    q: "📘 O que é o Guia Inglês com Música?",
+    a: "É um material digital em PDF que ensina inglês usando letras de músicas, com pronúncia simplificada e tradução lado a lado para acelerar vocabulário e listening.",
   },
   {
-    q: "Como vou receber o material?",
-    a: "Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link de acesso à área de membros. Lá você encontra todos os 500 moldes para download, as vídeo-aulas e os bônus. O acesso é vitalício!",
+    q: "🧠 Para quem serve?",
+    a: "Para iniciantes e intermediários que querem aprender de forma leve, prática e divertida — mesmo com rotina corrida e sem base de gramática.",
   },
   {
-    q: "Funciona mesmo para quem é iniciante?",
-    a: "Com certeza! A maioria das nossas alunas começou do absoluto zero. Os moldes já vêm prontos — você só precisa imprimir, recortar e colar. As aulas mostram cada detalhe. É impossível errar!",
+    q: "🎧 Preciso saber cantar ou entender de música?",
+    a: "Não. As músicas são um atalho de memorização. Você acompanha as letras, repete expressões e melhora a pronúncia naturalmente.",
   },
   {
-    q: "Quanto posso lucrar vendendo os cones?",
-    a: "Cada cone custa aproximadamente R$ 1,50 para fazer e pode ser vendido por R$ 10 a R$ 25, dependendo da decoração e recheio. Com 500 moldes diferentes, você tem variedade para atender todos os tipos de clientes. Muitas alunas faturam mais de R$ 3.000 só na semana da Páscoa!",
+    q: "📥 Como recebo o material?",
+    a: "O link de acesso é enviado para o seu e-mail imediatamente após a confirmação do pagamento. Confira também as abas de Promoções e Spam.",
   },
   {
-    q: "Tem suporte caso eu tenha dúvidas?",
-    a: "Sim! Oferecemos suporte completo por e-mail e WhatsApp. Nossa equipe está pronta para te ajudar com qualquer dúvida, seja sobre os moldes, sobre montagem ou sobre estratégias de venda.",
+    q: "💻 Em qual formato o material é entregue?",
+    a: "Em PDF e áudio, compatível com celular, tablet e computador. Acesse de onde quiser, quando quiser.",
+  },
+  {
+    q: "💸 O pagamento é único ou tem mensalidade?",
+    a: "Pagamento único. Sem mensalidades, sem renovação automática e sem taxas escondidas.",
+  },
+  {
+    q: "🛡️ É seguro comprar?",
+    a: "Sim. O processamento é feito por plataformas de pagamento 100% seguras, com criptografia em todas as etapas.",
+  },
+  {
+    q: "⏳ Essa oferta é por tempo limitado?",
+    a: "Sim. O valor promocional pode sair do ar a qualquer momento. Garanta seu acesso hoje mesmo.",
   },
 ];
 
 const FAQ = () => (
-  <section className="py-16 md:py-24">
+  <section className="py-16 md:py-24 bg-card">
     <div className="container">
       <h2 className="text-3xl md:text-4xl font-display font-extrabold text-secondary text-center mb-4">
-        Perguntas Frequentes
+        ❓ Tire suas dúvidas
       </h2>
       <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-        Tire suas dúvidas antes de garantir sua vaga:
+        Respostas rápidas para as perguntas mais comuns antes de garantir o seu acesso:
       </p>
       <div className="max-w-2xl mx-auto">
         <Accordion type="single" collapsible className="space-y-3">
@@ -43,7 +55,7 @@ const FAQ = () => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="bg-card rounded-xl shadow-card border-0 px-6"
+              className="bg-background rounded-xl shadow-card border-0 px-6"
             >
               <AccordionTrigger className="text-secondary font-display font-bold text-left text-base py-4 hover:no-underline">
                 {faq.q}
